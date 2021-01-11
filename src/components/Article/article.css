@@ -1,0 +1,66 @@
+.article {
+  background-color: white;
+  flex: 1 1 400px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.article-loading {
+  width: 20px;
+  padding: 50px;
+}
+
+.article-title {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.article-author {
+  font-size: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.article-description {
+  font-size: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+a:link,
+a:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.article-btn {
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.article-btn:hover {
+  background-color: rgb(214, 75, 75);
+  color: white;
+  transition-duration: 0.1s;
+}
+
+@media only screen and (max-width: 767px) {
+  .article img {
+    width: 100%;
+  }
+}

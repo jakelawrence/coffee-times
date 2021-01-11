@@ -1,0 +1,28 @@
+.pagination {
+  bottom: 0;
+  width: 100%;
+  color: rgb(22, 73, 34);
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.pageBtn {
+  width: 60px;
+}
+
+.pageBtnCurrent {
+  width: 60px;
+  text-decoration: underline;
+}
+
+.pageBtnDisabled {
+  width: 60px;
+  color: rgb(224, 224, 224);
+  cursor: default;
+}
+
+.pageBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

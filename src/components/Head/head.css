@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+.top {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  border-bottom: solid red 2px;
+}
+
+.title {
+  font-family: "Abel", sans-serif;
+  color: rgb(22, 73, 34);
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(25, 53, 31);
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .title {
+    font-size: 80px;
+  }
+  .sub-title {
+    font-size: 27px;
+    padding: 27px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .title {
+    font-size: 60px;
+  }
+  .sub-title {
+    font-size: 25px;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 50px;
+  }
+  .sub-title {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
