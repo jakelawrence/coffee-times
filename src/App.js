@@ -41,7 +41,7 @@ class App extends Component {
     axios({
       method: "get",
       url: `https://newsapi.org/v2/everything?sortBy=popularity&pageSize=9&page=${pageNum}&qInTitle=coffee&excludeDomains=google.com,reuters.com,themarketfeed.com,yankodesign.com,adsoftheworld.com,stereogum.com,designboom.com,bloomberg.com,techinasia.com,the-gadgeteer.com&language=en&apiKey=fca558e258b84f8b9b58d0988a853eab`,
-      responseType: "stream",
+      responseType: "json",
     }).then((response) => {
       console.log(response.data.articles);
       var images = [];
