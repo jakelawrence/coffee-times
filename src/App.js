@@ -9,7 +9,6 @@ const axios = require("axios");
 class App extends Component {
   state = {
     pageNum: 1,
-
     images: [],
     titles: [],
     authors: [],
@@ -39,6 +38,7 @@ class App extends Component {
 
   getArticles(pageNum) {
     axios({
+      protocol: "https",
       method: "get",
       url: `https://newsapi.org/v2/everything?sortBy=popularity&pageSize=9&page=${pageNum}&qInTitle=coffee&excludeDomains=google.com,reuters.com,themarketfeed.com,yankodesign.com,adsoftheworld.com,stereogum.com,designboom.com,bloomberg.com,techinasia.com,the-gadgeteer.com&language=en&apiKey=fca558e258b84f8b9b58d0988a853eab`,
       responseType: "json",
