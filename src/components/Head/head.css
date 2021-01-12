@@ -9,14 +9,24 @@
 
 .title {
   font-family: "Abel", sans-serif;
-  color: rgb(22, 73, 34);
+  color: black;
   font-size: 100px;
   font-weight: 700;
 }
 
+.sub-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-title-container img {
+  color: red;
+  margin-top: 5px;
+}
+
 .sub-title {
   font-family: "Roboto Condensed", sans-serif;
-  color: rgb(25, 53, 31);
+  color: black;
   font-size: 30px;
   font-weight: 700;
   padding: 30px;

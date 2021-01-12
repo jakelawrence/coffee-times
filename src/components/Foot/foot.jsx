@@ -74,7 +74,12 @@ class Foot extends Component {
                 3
               </div>
             )}
-            <div className="pageBtn">next</div>
+            <div
+              onClick={() => this.changePage(currentPage + 1)}
+              className="pageBtn"
+            >
+              next
+            </div>
           </>
         )}
         {currentPage === 10 && <div className="pageBtnDisabled">next</div>}
